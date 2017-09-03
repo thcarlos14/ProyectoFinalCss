@@ -1,0 +1,40 @@
+/*-- ESTILOS PARA EL HEADER --*/
+.contenido{
+    width: 100%;
+    padding: 0 0.5em;
+}
+
+.cabezera{
+    width: 100%;
+    background: #5b7989;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+}
+
+.titulo{
+    color: white;
+    text-shadow: 0 0 2px #02010a;
+
+}
+
+.menu__container__items{
+    display: flex;
+    flex-flow: row;
+    list-style: none;
+    padding: 1em;
+}
+
+.menu__item{
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+}
+
+.menu__item:hover{
+    text-decoration: underline;
+}
+
+/*-- ESTILOS PARA EL CUERPO --*/

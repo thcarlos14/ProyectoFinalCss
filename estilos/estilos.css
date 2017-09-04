@@ -45,7 +45,7 @@
     overflow: hidden;
 }
 
-/*-- ESTILOS PARA LA IMAGEN DE INICIO --*/
+/*-- Estilos para la imagen de inicio --*/
 
 #inicio{
     background: #82c3a6;
@@ -57,7 +57,7 @@
     width: 100%;
 }
 
-/*-- ESTILOS PARA LAS IMAGENES SECUNDARIAS --*/
+/*-- Estilos para la imagenes secundarias --*/
 
 .imagenes__secundarias{
     display: flex;
@@ -68,8 +68,54 @@
 
 }
 
-#paisajes__imagen, #retratos__imagen{
+.galeria__secundaria{
     width: 100%;
     border: 1px solid black;
     margin-bottom: 1em;
+}
+
+/*-- ESTILOS PARA EL FOOTER --*/
+.footer{
+    border-radius: 0 0 10px 10px;
+    background: #C6d5c5;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+}
+
+.contacto{
+    padding: 0.5em;
+    line-height: 1.5em;
+}
+
+.terminos{
+    padding: 0.5em;
+    line-height: 1.5em;
+}
+
+.redes__horizontales{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    padding: 1em 0em;
+    height: 4em;
+}
+
+.link__centrados{
+    width: 33.3%;
+}
+
+.link__centrados > svg{
+    width: 33.3%;
+}
+
+svg > image{
+    width: 2em;
+}
+
+.derechos{
+    padding: 0.5em;
+    line-height: 1.5em;
 }

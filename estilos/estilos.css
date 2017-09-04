@@ -74,6 +74,21 @@
     margin-bottom: 1em;
 }
 
+/*-- Efectos a la Galeria --*/
+
+#galeria__img__1{
+    filter: blur(10px);
+}
+
+/* Aplicacion de Filtros a pares con even e impares con odd*/
+.imagenes__secundarias > img:nth-child(even){
+    filter: grayscale(100%);
+}
+
+#galeria__img__3{
+    filter: sepia(90%);
+}
+
 /*-- ESTILOS PARA EL FOOTER --*/
 .footer{
     border-radius: 0 0 10px 10px;

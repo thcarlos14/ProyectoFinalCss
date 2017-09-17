@@ -240,6 +240,17 @@ html{
     height: 120%;
 }
 
+.link__centrados{
+    filter: grayscale(80%);
+}
+
+.link__centrados:hover{
+    filter: grayscale(0%);
+}
+
+
+
+
 h3{
     font-size: 1.8em;
     padding-bottom: 1em;

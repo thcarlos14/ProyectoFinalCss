@@ -56,32 +56,16 @@ header{
 
 /*-- ESTILOS PARA EL CUERPO --*/
 
+/*-- Estilos para la galeria --*/
+
 .contenedor-imagenes{
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-}
-
-/*-- Estilos para la imagen de inicio --*/
-
-#inicio{
-    background: #82c3a6;
-    padding: 1em;
-
-}
-
-#inicio__imagen{
-    width: 100%;
-}
-
-/*-- Estilos para la imagenes secundarias --*/
-
-.imagenes__secundarias{
     display: flex;
     flex-flow: column;
     width: 100%;
+    max-width: 100%;
     background: #d5c75f;
     padding: 1em;
+    overflow: hidden;
 
 }
 
@@ -89,22 +73,24 @@ header{
     width: 100%;
     border: 1px solid black;
     margin-bottom: 1em;
+    margin-top: 1em;
 }
 
-/*-- Efectos a la Galeria --*/
+/*-- TEfectos a las imagenes*/
 
-.galeria__img__1{
+#imagen1{
     filter: blur(10px);
 }
 
-/* Aplicacion de Filtros a pares con even e impares con odd*/
-.imagenes__secundarias > img:nth-child(even){
+.imagenes_galeria:nth-child(even){ /*Even se usa en nth-child para seleccionar los pares y odd para las impares*/
     filter: grayscale(100%);
 }
 
-.galeria__img__3{
+.imagenes_galeria:nth-child(3n){
     filter: sepia(90%);
 }
+
+
 
 /*-- ESTILOS PARA EL FOOTER --*/
 .footer{
@@ -150,4 +136,96 @@ svg > image{
 .derechos{
     padding: 0.5em;
     line-height: 1.5em;
+}
+
+@media (min-width:900px) {
+/*----- ESTILOS GENERALES Y CENTRADO DE LA PAGINA-----*/
+html{
+    width: 900px;
+    box-sizing: border-box;
+    font-family: "Dancing Script",cursive;
+    font-size: 16px;
+    background-color: #02010a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+/*----- CABEZERA -----*/
+
+.cabezera{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.titulo{
+    font-size: 1.5em;
+}
+
+/*------ GALERIA -----*/
+.imagenes_galeria{
+    width: 33.3%;
+    padding: 3%;
+}
+
+.contenedor-imagenes{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+
+}
+
+
+
+/*----- FOOTER -----*/
+.footer{
+    font-size: 0.85em;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.contacto, .terminos, .redes_sociales, .derechos{
+    width: 25%;
+}
+
+.redes__horizontales{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.link__centrados,svg,image{
+    width: 100%;
+    height: 120%;
+}
+
+.link__centrados{
+    filter: grayscale(80%);
+}
+
+.link__centrados:hover{
+    filter: grayscale(0%);
+}
+
+
+
+
+h3{
+    font-size: 1.8em;
+    padding-bottom: 1em;
 }
